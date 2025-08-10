@@ -54,10 +54,42 @@ embedded-systems-lab/
 
 ## Initial installments (Arch Linux)
 
+### the script
+
 ```bash
 
 yay -Syu
 
 yay -S --needed base-devel git cmake ninja python python-pip clang clang-tools bear arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib arm-none-eabi-gdb gdb-multiarch opencd stlink dfu-util qemu-system-arm minicom picocom cppcheck doxygen graphviz
+
+```
+
+### What they do (notes for myself)
+
+```
+base-devel              # Contains essential packages for building software, including GCC and Make.
+git                     # Git is a version control system, which makes it easier for users to add, change and collaborate when writing code and files.
+cmake                   # Is a software development tool that can help structure tests, packaaging, installations and more.
+ninja                   # It's another build system that focusing on speed. It relies on other build systems and ninja itself does the assembling
+python                  # the programming language python.
+python-pip              # The package manager for python.
+clang                   # Is another compiler like GCC.
+clang-tools             # Extra tools for clang
+bear                    # A tool to generate compilation database for Clang tooling
+arm-none-eabi-gcc       # The GCC compiler for embedded (in this project atleast)
+arm-none-eabi-binutils  # a collection of tools for working with binary and object files when working on embeeded system. 
+arm-none-eabi-newlib    #A C standard library implementation intended for use on embedded systems (ARM bare metal)
+arm-none-eabi-gdb       # GNU debugger for ARM/Embedded systems.
+gdb-multiarch           # no longer exists, will be removed.
+opencd                  # no longer exists, will be removed
+stlink                  # a toolset for programming and debugging STM32 boards and devices.
+dfu-util                # Is often used to update firmware of devices.
+qemu-system-arm         # QEMU system emulator for ARM.
+minicom                 # A free source code that is a communication program.
+picocom                 # A minimal terminal emulation program.
+cppcheck                # A tool for static C/C++ code analysis.
+doxygen                 # Documentation system for various programming languages
+graphviz                # A rich set of graph drawing tools.
+
 
 ```
