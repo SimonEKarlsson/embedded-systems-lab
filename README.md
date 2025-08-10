@@ -52,3 +52,12 @@ embedded-systems-lab/
 └── README.md
 ```
 
+## Initial installments (Arch Linux)
+
+```bash
+
+yay -Syu
+
+yay -S --needed base-devel git cmake ninja python python-pip clang clang-tools bear arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib arm-none-eabi-gdb gdb-multiarch opencd stlink dfu-util qemu-system-arm minicom picocom cppcheck doxygen graphviz
+
+```
