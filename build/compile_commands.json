@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/simon/repo/projects/embedded-systems-lab/build",
+  "command": "/usr/bin/cc   -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/dummy_app.dir/dummy_main.c.o -c /home/simon/repo/projects/embedded-systems-lab/dummy_main.c",
+  "file": "/home/simon/repo/projects/embedded-systems-lab/dummy_main.c",
+  "output": "CMakeFiles/dummy_app.dir/dummy_main.c.o"
+}
+]

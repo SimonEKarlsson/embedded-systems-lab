@@ -1,0 +1,12 @@
+#CMake files
+CMakeCache.txt
+CMakeFiles/
+
+#IDE/editor stuff
+.vscode/
+.idea/
+
+#Backup/swap files
+*~
+*.swp
+*.swo

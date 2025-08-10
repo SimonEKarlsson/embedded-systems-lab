@@ -1,6 +1,6 @@
 # embedded-systems-lab
-A starter project for learning embedded systems and all about it.
 
+A starter project for learning embedded systems and all about it.
 
 
 ## Repository Structure
@@ -58,9 +58,11 @@ embedded-systems-lab/
 
 ```bash
 
-yay -Syu
+yay -Syu --needed base-devel git cmake ninja python python-pip clang clang-tools-extras bear arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib arm-none-eabi-gdb openocd stlink dfu-util qemu-system-arm minicom picocom cppcheck doxygen graphviz
 
-yay -S --needed base-devel git cmake ninja python python-pip clang clang-tools bear arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib arm-none-eabi-gdb gdb-multiarch opencd stlink dfu-util qemu-system-arm minicom picocom cppcheck doxygen graphviz
+#To make sure you got the correct access, run:
+sudo usermod -aG uucp,lock $USER
+
 
 ```
 
@@ -74,14 +76,13 @@ ninja                   # It's another build system that focusing on speed. It r
 python                  # the programming language python.
 python-pip              # The package manager for python.
 clang                   # Is another compiler like GCC.
-clang-tools             # Extra tools for clang
+clang-tools-extras      # Extra tools for clang
 bear                    # A tool to generate compilation database for Clang tooling
 arm-none-eabi-gcc       # The GCC compiler for embedded (in this project atleast)
 arm-none-eabi-binutils  # a collection of tools for working with binary and object files when working on embeeded system. 
-arm-none-eabi-newlib    #A C standard library implementation intended for use on embedded systems (ARM bare metal)
+arm-none-eabi-newlib    # A C standard library implementation intended for use on embedded systems (ARM bare metal)
 arm-none-eabi-gdb       # GNU debugger for ARM/Embedded systems.
-gdb-multiarch           # no longer exists, will be removed.
-opencd                  # no longer exists, will be removed
+openocd                 # Debugging, in-system programming and boundary-scan testing for embedded target devices
 stlink                  # a toolset for programming and debugging STM32 boards and devices.
 dfu-util                # Is often used to update firmware of devices.
 qemu-system-arm         # QEMU system emulator for ARM.
